@@ -1,6 +1,8 @@
-# Password Generator
+# [Password Generator](https://cyanic76.github.io/password-generator)
 
 Here's a simple password generator.
+
+![preview](https://github.com/Cyanic76/password-generator/blob/master/Capture.PNG)
 
 ## Features
 
