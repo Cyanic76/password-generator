@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+  margin: 0em;
+}
+
+header {
+  background-color: #DDDDDD;
+  width: 100%;
+  color: black;
+}
+
+header center {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 21px;
+}
+
+.textonly {
+  border-width: 0px;
+  background-color: rgba(0,0,0,0);
+  color: black;
+}
+
+button {
+  background-color: rgba(0,0,0,0);
+  border-radius: 5px;
+  border-color: blue;
+  color: blue;
+}
