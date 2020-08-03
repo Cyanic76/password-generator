@@ -38,7 +38,7 @@ When creating a bug report, please include as many details as possible. Fill out
 
 - **Read the whole** Contributing guidelines.
 
-- View [this table] to see if your OS/Browser is still supported. If it is not, do not open a bug report.
+- View [this paragraph](https://github.com/Cyanic76/password-generator/blob/master/.github/CONTRIBUTING.md#supported-browsers-and-systems) to see if your OS/Browser is still supported. If it is not listed in the linked paragraph or it is listed [here](https://github.com/Cyanic76/password-generator/blob/master/.github/CONTRIBUTING.md#browsers--systems-that-are-not-supported), do not open a bug report.
 
 **How do I submit a bug report?**
 
@@ -60,7 +60,7 @@ This little section will guide you through requesting a new feature. Following t
 
 - **[Search through Issues](https://github.com/Cyanic76/password-generator/issues?q=is%3Aissue+label%3A%22ctn%3A+enhancement%22) and [Pull requests](https://github.com/Cyanic76/password-generator/issues?q=is%3Aissue+label%3A%22pr%3A+feature%22+)** and see if your request is already open. If you find out that it is, you don't need to open another issue.
 
-- View [this table] to see if your OS/Browser is still supported. If it is not, do not open a feature request.
+- View [this paragraph](https://github.com/Cyanic76/password-generator/blob/master/.github/CONTRIBUTING.md#supported-browsers-and-systems) to see if your OS/Browser is still supported. If it is not listed in the linked paragraph or it is listed [here](https://github.com/Cyanic76/password-generator/blob/master/.github/CONTRIBUTING.md#browsers--systems-that-are-not-supported), do not open a bug report.
 
 ### How do I submit a feature request
 
