@@ -17,4 +17,6 @@ Here's a simple password generator.
 
 ---
 
+Want to contribute? [Read our guidelines](https://github.com/Cyanic76/password-generator/blob/master/.github/CONTRIBUTING.md).
+
 Password Generator by Cyanic.
