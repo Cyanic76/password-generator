@@ -1,29 +1,34 @@
 body {
-  background-color: white;
+  background-color: #191919;
   margin: 0em;
+  color: whitesmoke;
 }
 
-header {
-  background-color: #DDDDDD;
-  width: 100%;
-  color: black;
-}
-
-header center {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  font-size: 21px;
+#card {
+	max-width: 90%;
+	color: whitesmoke;
+	position: fixed;
+	left: 5%;
+	right: 5%;
 }
 
 .textonly {
   border-width: 0px;
   background-color: rgba(0,0,0,0);
-  color: black;
+  color: whitesmoke;
 }
 
 button {
   background-color: rgba(0,0,0,0);
   border-radius: 5px;
-  border-color: blue;
-  color: blue;
+  color: white;
+}
+
+button .primary {
+  font-weight: bold;
+  border-color: lightblue;
+}
+
+.darklink {
+	color: white;
 }
