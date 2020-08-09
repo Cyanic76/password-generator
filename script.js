@@ -30,6 +30,12 @@ function gen() {
     
     // show password
     document.getElementById("output").innerHTML = `${basic_output}`;
+	document.getElementById("generate").style.color = "#33FF33";
+	document.getElementById("generate").style.borderColor = "#33FF33";
+	setTimeout(() => {
+		document.getElementById("generate").style.color = "white";
+		document.getElementById("generate").style.borderColor = "white";
+	}, 1000)
     return;
     
   }
@@ -56,6 +62,12 @@ function gen() {
     // show the final password.
     document.getElementById("output").innerHTML = `${medium_output}`
     document.getElementById("output").innerHTML = medium_output;
+	document.getElementById("generate").style.color = "#33FF33";
+	document.getElementById("generate").style.borderColor = "#33FF33";
+	setTimeout(() => {
+		document.getElementById("generate").style.color = "white";
+		document.getElementById("generate").style.borderColor = "white";
+	}, 1000)
     return;
     
   }
@@ -82,6 +94,12 @@ function gen() {
     // show the final password
     document.getElementById("output").innerHTML = `${hard_output}`
     document.getElementById("output").innerHTML = hard_output;
+	document.getElementById("generate").style.color = "#33FF33";
+	document.getElementById("generate").style.borderColor = "#33FF33";
+	setTimeout(() => {
+		document.getElementById("generate").style.color = "white";
+		document.getElementById("generate").style.borderColor = "white";
+	}, 1000)
     return;
     
   }
@@ -90,26 +108,30 @@ function gen() {
 
 function copy() {
   var text = document.getElementById("output").innerHTML;
-  if(text === "Placeholder" || !text){
+  if(text === "Don't copy me." || !text){
     alert("Password is not generated!");
     return;
   }
+  document.getElementById("copy").style.color = "#33FF33"
   navigator.clipboard.writeText(text)
-  alert("Successfully copied the password to your clipboard!")
+  setTimeout(() => {
+	  document.getElementById("copy").style.color = "white"
+  }, 1000)
+  return;
 }
 
 // reveal
 function reveal() {
   var out = document.getElementById("output");
-  if(out.innerHTML === "Placeholder"){
+  if(out.innerHTML === "Don't copy me."){
     alert("Nothing to reveal.")
     return;
   }
-  out.style.color = "black";
+  out.style.color = "whitesmoke";
 }
 
 // don't reveal
 function unreveal() {
   var out = document.getElementById("output");
-  out.style.color = "white";
+  out.style.color = "#191919";
 }
