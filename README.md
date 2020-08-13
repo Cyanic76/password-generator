@@ -2,7 +2,7 @@
 
 Here's a simple password generator.
 
-![preview](https://github.com/Cyanic76/password-generator/blob/master/Capture.PNG)
+![preview](https://github.com/Cyanic76/password-generator/blob/master/Capture.png)
 
 ## Features
 
