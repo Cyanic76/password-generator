@@ -2,68 +2,84 @@
 <html>
 	<head>
 		<title>Random passwords</title>
-		<meta charset="utf-8" />
-    		<link rel="stylesheet" href="https://cyanic76.github.io/password-generator/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
 	</head>
+
 	<body style="margin: 2em;">
-	
 		<h1>
 			Password generator
 		</h1>
-		<a href="https://github.com/Cyanic76/password-generator" class="darklink">
-			View source code on GitHub
-		</a>
+
+		<a href="https://github.com/Cyanic76/password-generator" class="darklink">View source code on GitHub</a> <br>
+		This version is based on the <a href="https://github.com/LProgead" class="darklink">LProgead</a> fork.
     
-		<br><br>
+		<br>
+		<br>
 	
-    <div id="card">
-	 <div id="first">
-        <h3>
-          Choose the caracters you want
-        </h3>
-        <input type="radio" id="basic" name="basic" checked>
-        <label for="basic">Only letters.</label>
-        <br>
-        <input type="radio" id="medium" name="basic">
-        <label for="medium">Letters and numbers</label>
-        <br>
-        <input type="radio" id="hard" name="basic">
-        <label for="hard">Letters, numbers and special characters.</label>
-     </div>
-     <div id="second"><br>
-        <h3>
-          Choose the password length
-        </h3>
-        The length can't be lower than 8 characters and can't exceed 2048 characters.<br><br>
-        <input id="length" min="8" max="2048" type="number">
-     </div>
-	 <br>
-     <div id="third">
-        <h3>
-          Generate your password
-        </h3>
-        <button class="primary" id="generate" onclick="gen();">
-          Generate
-        </button>
-        <button class="textonly" id="copy" onclick="copy()">
-          Copy to clipboard
-        </button>
-        <button class="textonly" onclick="reveal();">
-          Show the password below
-        </button>
-        <button class="textonly" onclick="unreveal();">
-          Hide
-        </button><br>
-        <br><br>
-        <div id="output" style="color: #191919; width: 100%; max-width: 100%;">
-          Placeholder
-        </div>
-     </div>
+	<div id="first">
+		<h3>
+		Choose the caracters you want
+		</h3>
+		
+		<input type="radio" id="basic" name="type" required>
+		<label for="basic">Only letters</label>
+
+		<br>
+
+		<input type="radio" id="medium" name="type" checked required>
+		<label for="medium">Letters and numbers (recommended)</label>
+
+		<br>
+
+		<input type="radio" id="hard" name="type" required>
+		<label for="hard">Letters, numbers and special characters</label>
+		</div>
+		
+	<div id="second">
+		<br>
+		<h3>
+			Choose the password length
+		</h3>
+
+		The length can't be lower than 8 characters and can't exceed 2048 characters.
+		<br>
+		<br>
+		<input id="length" min="8" max="2048" type="number" required>
 	</div>
-    
-	<script src="https://cyanic76.github.io/password-generator/script.js"></script>
+
+	<br>
+
+	<div id="third">
+		<h3>
+			Generate your password
+		</h3>
+
+		<button class="textonly" id="generate" onclick="gen();">
+			Generate
+		</button>
+
+		<button class="textonly" id="copy" onclick="copy()">
+			Copy to clipboard
+		</button>
+
+		<button class="textonly" id="reveal" onclick="reveal();">
+			Show the password below
+		</button>
+
+		<button class="textonly" id="unreveal" onclick="unreveal();">
+			Hide
+		</button>
+		
+		<br>
+		<br>
+		<br>
+
+		<textarea id="output" style="color: black; height: 96px; width: 832px; display: none;"></textarea>
+	</div>
     
 	</body>
 </html>
