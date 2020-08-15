@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
 body {
-  background-color: #191919;
-  margin: 0em;
-  color: whitesmoke;
+	font-family: "Roboto";
+  	background-color: #191919;
+  	margin: 0em;
+  	color: whitesmoke;
 }
 
 #card {
@@ -13,20 +16,20 @@ body {
 }
 
 .textonly {
-  border-width: 0px;
-  background-color: rgba(0,0,0,0);
-  color: whitesmoke;
+  	border-width: 0px;
+  	background-color: rgba(0,0,0,0);
+  	color: whitesmoke;
 }
 
 button {
-  background-color: rgba(0,0,0,0);
-  border-radius: 5px;
-  color: white;
+  	background-color: rgba(0,0,0,0);
+  	border-radius: 5px;
+  	color: white;
 }
 
 button .primary {
-  font-weight: bold;
-  border-color: lightblue;
+  	font-weight: bold;
+  	border-color: lightblue;
 }
 
 .darklink {
