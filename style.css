@@ -16,12 +16,14 @@ body {
 }
 
 .textonly {
+	font-family: "Roboto";
   	border-width: 0px;
   	background-color: rgba(0,0,0,0);
   	color: whitesmoke;
 }
 
 button {
+	font-family: "Roboto";
   	background-color: rgba(0,0,0,0);
   	border-radius: 5px;
   	color: white;
