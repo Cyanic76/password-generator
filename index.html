@@ -10,6 +10,7 @@
 	</head>
 
 	<body style="margin: 2em;">
+	<center>
 		<h1>
 			Password generator
 		</h1>
@@ -31,7 +32,7 @@
 		<br>
 
 		<input type="radio" id="medium" name="type" checked required>
-		<label for="medium">Letters and numbers (recommended)</label>
+		<label for="medium">Letters and numbers</label>
 
 		<br>
 
@@ -45,7 +46,7 @@
 			Choose the password length
 		</h3>
 
-		The length can't be lower than 8 characters and can't exceed 2048 characters.
+		The length must be between 8 and 2048.
 		<br>
 		<br>
 		<input id="length" min="8" max="2048" type="number" required>
@@ -80,6 +81,6 @@
 
 		<textarea id="output" style="color: black; height: 96px; width: 832px; display: none;"></textarea>
 	</div>
-    
+	</center>
 	</body>
 </html>
