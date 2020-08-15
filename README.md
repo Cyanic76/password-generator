@@ -6,8 +6,8 @@ Here's a simple password generator.
 
 ## Features
 
-- Generate a password with one of the available sets of characters: Basic (letters only), Medium (letters & numbers) and Hard (letters, numbers & [special characters](https://cyanic76.github.io/password-generator/#special).).
-- When the password is generated, it is **not revealed** until the user choose to reveal it.
+- Generate a password with one of the available sets of characters: Basic (letters only), Medium (letters & numbers) and Hard (letters, numbers & special characters.).
+- When the password is generated, it is **not revealed** until you choose to reveal it.
 - You can copy the generated password without revealing it.
 
 ## Privacy
