@@ -68,7 +68,8 @@ function reveal() {
 function unreveal() {
 	document.getElementById("output").style.display = "none";
 
+	document.getElementById("unreveal").style.color = "#33FF33";
 	setTimeout(() => {
-		document.getElementById("reveal").style.color = "white";
+		document.getElementById("unreveal").style.color = "white";
 	}, 1000);
 }
