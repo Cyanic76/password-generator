@@ -10,77 +10,48 @@
 	</head>
 
 	<body style="margin: 2em;">
-	<center>
-		<h1>
-			Password generator
-		</h1>
+	<div class="content">
+		<div class="card>
+			    <div class="content">
+					<h1>
+						Password Generator
+					</h1>
+					<a style="font-size: 16px; color: #66f;">
+						View source code and contributors on GitHub
+					</a>
+					<br><br>
+					<h3>What characters do you want?</h3>
+					<br><br>
+    					<input type="radio" id="basic" name="type" required>
+					<label for="basic">Letters only (not recommended</label>
+					<br>
+    					<input type="radio" id="medium" name="type" required>
+					<label for="medium">Letters and numbers</label>
+					<br>
+					<input type="radio" id="hard" name="type" required>
+					<label for="hard">Letters, numbers and special characters</label>
+					<br><br>
+					<h3>How long should the password be?</h3>
+					It should be between 8 and 2048 characters long. Note that some websites do not accept more than 72 characters.
+					<input type="number" min="8" max="2048" id="length">
+				
+					<h3>Generate your password</h3>
+					<button class="textonly" id="generate" onclick="gen();" style="font-family: 'Roboto';">
+						Generate
+					</button>
+					<button class="textonly" id="copy" onclick="copy();" style="font-family: 'Roboto';">
+						Copy to clipboard
+					</button>
+					<button class="textonly" id="reveal" onclick="reveal();" style="font-family: 'Roboto';">
+						Show the password below
+					</button>
+					<button class="textonly" id="unreveal" onclick="unreveal();" style="font-family: 'Roboto';">
+						Hide
+					</button>
 
-		<a style="font-size: 16px;" href="https://github.com/Cyanic76/password-generator" class="darklink">View source code on GitHub</a> <br>
-		<span style="font-size: 11px;">View contributors including LProgead on GitHub.</span>
-    
-		<br>
-		<br>
-	
-	<div id="first">
-		<h3>
-		Choose the caracters you want
-		</h3>
-		
-		<input type="radio" id="basic" name="type" required>
-		<label for="basic">Only letters</label>
-
-		<br>
-
-		<input type="radio" id="medium" name="type" checked required>
-		<label for="medium">Letters and numbers</label>
-
-		<br>
-
-		<input type="radio" id="hard" name="type" required>
-		<label for="hard">Letters, numbers and special characters</label>
+					<textarea id="output" style="color: black; height: 96px; width: 100%; display: none;"></textarea>
+				</div>
+			</div>
 		</div>
-		
-	<div id="second">
-		<br>
-		<h3>
-			Choose the password length
-		</h3>
-
-		The length must be between 8 and 2048.
-		<br>
-		<br>
-		<input id="length" min="8" max="2048" type="number" required>
-	</div>
-
-	<br>
-
-	<div id="third">
-		<h3>
-			Generate your password
-		</h3>
-
-		<button class="textonly" id="generate" onclick="gen();" style="font-family: 'Roboto';">
-			Generate
-		</button>
-
-		<button class="textonly" id="copy" onclick="copy()" style="font-family: 'Roboto';">
-			Copy to clipboard
-		</button>
-
-		<button class="textonly" id="reveal" onclick="reveal();" style="font-family: 'Roboto';">
-			Show the password below
-		</button>
-
-		<button class="textonly" id="unreveal" onclick="unreveal();" style="font-family: 'Roboto';">
-			Hide
-		</button>
-		
-		<br>
-		<br>
-		<br>
-
-		<textarea id="output" style="color: black; height: 96px; width: 832px; display: none;"></textarea>
-	</div>
-	</center>
 	</body>
 </html>
