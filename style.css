@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
 
 body {
-	font-family: "Roboto";
-  	background-color: #191919;
-  	margin: 0em;
-  	color: whitesmoke;
+  background-color: #2A2A2A;
+  font-family: "Roboto";
+  color: white;
+  margin: 0em;
 }
 
-#card {
-	max-width: 90%;
-	color: whitesmoke;
-	position: fixed;
-	left: 5%;
-	right: 5%;
+/* Content, 5% from left & right */
+.content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Cards */
+.card {
+  border-radius: 6px;
+  background-color: #212121;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.24);
 }
 
 .textonly {
